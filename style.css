@@ -6,34 +6,56 @@
 }
 
 body {
-    position: absolute;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    /* Added Font */
+    /* Instead of using that translate stuff to center it I used flex :D */
+    /* Then set the height to 100 viewport height so every thing shows */
+}
+
+.container{
+    /* position: absolute;
 	top: 55%;
 	left: 50%;
-	transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%); */
+    /* Flexbox on the body tag has taken care of this stuff */
+
+
 	padding: 30px;
 	border-radius: 30px;
 	box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
     font-family: sans-serif;
     background: rgb(255, 255, 255);
-    height: 700px;
+    width: 50%;
 }
 
-.note {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 
 h4 {
     color: rgb(0, 0, 0);
     font-family: sans-serif;
     margin-bottom: 10px;
 }
-strong {
+/* strong {
     clear: left;
+} */
+
+header{
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom: 20px;
 }
 
-button {
+header div{
+    display: flex;
+    gap: 10px;
+}
+
+/* button */ .btn{
     background: rgb(27, 16, 102);
     color: white;
     width: 30px;
@@ -44,15 +66,12 @@ button {
 
 h5 {
     color: rgb(34, 34, 233);
-    text-align: right;
-    padding-top: 20px;
 }
 
 img {
     width: 40px;
-    margin-top: 10px;
+    height: 40px;
     border-radius: 50%;
-    float: left;
 }
 
 a {
@@ -61,98 +80,39 @@ a {
     text-decoration: none;
 }
 
-.mk {
-    padding-left: 400px;
-    color: rgb(91, 91, 198);
+
+.notifications{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
-b {
-    color: rgb(93, 0, 255);
-}
-
-.a {
+.notification {
     background: rgb(234, 234, 241);
-    height: 70px;
-    border-radius: 9px;
-    width: 700px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: 1;
-}
-
-.b {
-    background: rgb(234, 234, 241);
-    height: 70px;
-    border-radius: 9px;
-    width: 700px;
-    max-width: 750px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-    row-gap: 1px;
-    margin-right: 10px;
-}
-
-.c {
-    background: rgb(234, 234, 241);
-    height: 70px;
-    border-radius: 9px;
-    width: 700px;
-    max-width: 750px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 5px;
-}
-
-.d {
-    height: 70px;
-    border-radius: 9px;
-    width: 700px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 5px;
-}
-
-.e {
-    background: rgb(255, 255, 255);
-    height: 85px;
     border-radius: 9px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 700px;
-    max-width: 750px;
-    gap: 5px;
+    gap: 15px;
+    padding: 7px 10px;
 }
 
-.f {
-    background: rgb(255, 255, 255);
-    height: 70px;
-    border-radius: 9px;
+.notification .description{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 700px;
-    max-width: 750px;
-    gap: 5px;
+    flex-direction: column;
+    gap: 3px;
 }
 
-.pm {
+
+/* .pm  changed to message*/ .message{
     background: rgb(181, 181, 205);
-    height: 65px;
     border-radius: 7px;
-    margin-bottom: 10px;
+    padding: 10px;
+    /* margin-bottom: 10px;
     margin-left: 20px;
     margin-top: 20px ;
     padding-top: 5px;
-    padding-left: 4px;
+    padding-left: 4px; */
 }
-small {
+/* small {
     padding-left: 45px;
     margin-bottom: 10px;
-}
+} */
